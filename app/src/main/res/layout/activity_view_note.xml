@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewNoteActivity"
+    android:background="#7040C4FF">
+
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:paddingTop="12dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:drawableLeft="@android:drawable/ic_menu_revert"
+            android:drawablePadding="0dp"
+            android:paddingLeft="8.5dp"
+            android:paddingRight="0dp"
+            android:layout_marginLeft="22dp"
+            android:text=""
+            android:backgroundTint="#05166D"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:drawableLeft="@android:drawable/ic_menu_delete"
+            android:drawablePadding="0dp"
+            android:paddingLeft="8.5dp"
+            android:paddingRight="0dp"
+            android:text=""
+            android:backgroundTint="#F44336"
+            android:layout_marginRight="8dp"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:drawablePadding="0dp"
+            android:paddingLeft="8.5dp"
+            android:paddingRight="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="22dp"
+            android:text=""
+            android:backgroundTint="#05166D"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/viewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Title"
+        android:background="@drawable/border"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:padding="12dp"
+        android:textSize="19dp"
+        android:layout_below="@+id/buttonBar"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/viewNotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter Your Notes"
+        android:background="@drawable/border"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:padding="12dp"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/viewTitle"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
